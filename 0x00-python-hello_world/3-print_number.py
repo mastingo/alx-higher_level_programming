@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-numero = 98
-print(f"{numero:d} Battery street\n")
+number = 98
+print(f"{number} Battery street\n")
