@@ -48,12 +48,12 @@ class Rectangle:
     def __str__(self):
         """public instance"""
         string = ''
-        if self.width == 0 or self.height == 0:
+        if self.__width == 0 or self.__height == 0:
             return ''
-        for i in range(self.height):
-            string += '#' * self.width + '\n'
+        for i in range(self.__height):
+            string += '#' * self.__width + '\n'
         return string
 
     def __repr__(self):
         """for the vibes"""
-        return f'Rectangle({self.width}, {self.height})'
+        return f'Rectangle({self.__width}, {self.__height})'
