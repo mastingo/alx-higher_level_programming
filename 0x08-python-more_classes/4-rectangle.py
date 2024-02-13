@@ -48,7 +48,7 @@ class Rectangle:
     def __str__(self):
         """public instance"""
         string = ''
-        if self.__width == 0 or self.__height == 0:
+        if self.width == 0 or self.height == 0:
             return ''
         for i in range(self.height):
             string += '#' * self.width + '\n'
