@@ -5,6 +5,7 @@ class Rectangle:
     """init variable"""
 
     def __init__(self, width=0, height=0):
+        """comment"""
         self.width = width
         self.height = height
 
@@ -54,4 +55,5 @@ class Rectangle:
         return string
 
     def __repr__(self):
+        """for the vibes"""
         return f'Rectangle({self.width}, {self.height})'
