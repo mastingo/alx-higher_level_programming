@@ -7,7 +7,6 @@ BaseGeometry = __import__('8-rectangle').BaseGeometry
 
 class Rectangle(BaseGeometry):
     """class rectangle"""
-
     def __init__(self, width, height):
         """init private instances"""
         self.__width = width
