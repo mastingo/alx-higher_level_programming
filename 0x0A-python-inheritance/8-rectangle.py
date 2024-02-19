@@ -8,12 +8,11 @@ BaseGeometry = module.BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """init private instances"""
+    """class rectangle subclass of Basegeometry"""
     def __init__(self, width, height):
         """init"""
         self.__width = width
         self.__height = height
-        super().__init__()
         if height is True:
             return self.integer_validator('height', height)
         if width is True:
