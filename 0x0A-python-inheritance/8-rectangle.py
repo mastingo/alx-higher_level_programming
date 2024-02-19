@@ -3,11 +3,8 @@
 
 
 import importlib
-
 module = importlib.import_module("7-base_geometry")
-
 BaseGeometry = module.BaseGeometry
-"""class rectangle inheriting from basegeom)"""
 
 
 class Rectangle(BaseGeometry):
