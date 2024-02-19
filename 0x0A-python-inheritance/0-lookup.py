@@ -4,4 +4,4 @@
 
 def lookup(obj):
     """sumn"""
-        return dir(obj)
+    return dir(obj)
