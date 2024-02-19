@@ -13,11 +13,9 @@ BaseGeometry = module.BaseGeometry
 class Rectangle(BaseGeometry):
     """init private instances"""
     def __init__(self, width, height):
-        """yes"""
+        """init"""
         self.__width = width
         self.__height = height
-
-        """using super to access parent function"""
         super().__init__()
         if height is True:
             return self.integer_validator('height', height)
