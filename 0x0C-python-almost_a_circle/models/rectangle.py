@@ -109,3 +109,6 @@ class Rectangle(Base):
         for key, value in kwargs.items():
             """handling the keyword args here assigning to the repective"""
             setattr(self, key, value)
+
+    def to_dictionary(self):
+        return dict(id = self.id, width = self.width, height =self.height, x = self.x, y= self.y)
