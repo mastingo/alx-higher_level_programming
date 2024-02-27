@@ -1,10 +1,8 @@
 #!/usr/bin/python3
+"""import form base the Base class"""
 
 
 from models.base import Base
-
-
-"""rectangle class inheriting from base"""
 
 
 class Rectangle(Base):
@@ -115,4 +113,4 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """ method to turn the self variables to a dict"""
-        return dict(id = self.id, width = self.width, height =self.height, x = self.x, y= self.y) # noqa
+        return dict(id=self.id, width=self.width, height=self.height, x=self.x, y=self.y)  # noqa
