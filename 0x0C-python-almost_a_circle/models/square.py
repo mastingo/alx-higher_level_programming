@@ -7,7 +7,6 @@ from models.rectangle import Rectangle
 
 class Square(Rectangle):
     """sub class square with init"""
-
     def __init__(self, size, x=0, y=0, id=None):
         super().__init__(size, size, x, y, id)
 
@@ -27,6 +26,7 @@ class Square(Rectangle):
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
+        """update method to assign args and kwargs"""
         for arg in args:
             if arg is not None:
                 if len(args) > 0:
@@ -41,4 +41,5 @@ class Square(Rectangle):
             setattr(self, key, value)
 
     def to_dictionary(self):
+        """turning class variables to dictionaries"""
         return dict(id=self.id, size=self.size, x=self.x, y=self.y)
