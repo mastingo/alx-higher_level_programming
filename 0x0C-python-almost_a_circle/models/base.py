@@ -19,7 +19,7 @@ class Base:
         """turning json to string"""
         if list_dictionaries is None:
             return '[]'
-        elif list_dictionaries is []:
+        elif list_dictionaries == []:
             return '[]'
         else:
             return str(list_dictionaries)
