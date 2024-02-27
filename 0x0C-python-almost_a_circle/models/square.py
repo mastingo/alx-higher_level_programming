@@ -37,8 +37,8 @@ class Square(Rectangle):
                     self.x = args[2]
                 if len(args) > 3:
                     self.y = args[3]
-        for key,value in kwargs.items():
+        for key, value in kwargs.items():
             setattr(self, key, value)
 
     def to_dictionary(self):
-        return dict(id = self.id, size = self.size, x = self.x, y = self.y)
+        return dict(id=self.id, size=self.size, x=self.x, y=self.y)
