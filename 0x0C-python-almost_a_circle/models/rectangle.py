@@ -1,5 +1,8 @@
 #!/usr/bin/python3
+
+
 from models.base import Base
+
 
 """rectangle class inheriting from base"""
 
@@ -76,7 +79,7 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
-
+        """method to display rows and height in #"""
         if self.width == 0 or self.height == 0:
             print('')
             retrun
@@ -111,4 +114,5 @@ class Rectangle(Base):
             setattr(self, key, value)
 
     def to_dictionary(self):
-        return dict(id = self.id, width = self.width, height =self.height, x = self.x, y= self.y)
+        """ method to turn the self variables to a dict"""
+        return dict(id = self.id, width = self.width, height =self.height, x = self.x, y= self.y) # noqa
