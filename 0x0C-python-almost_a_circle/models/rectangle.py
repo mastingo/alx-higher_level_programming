@@ -90,7 +90,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """__str__ override to return this f string format"""
-        return f"[Rectangle]({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"   # noqa
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"   # noqa
 
     def update(self, *args, **kwargs):
         """assign the variables depending on the args index"""
