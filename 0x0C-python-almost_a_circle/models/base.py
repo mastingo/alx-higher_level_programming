@@ -13,7 +13,7 @@ class Base:
         else:
             Base.__nb_object += 1
             self.id = Base.__nb_object
-    
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """turning json to string"""
