@@ -22,10 +22,10 @@ class Base:
         """turning json to string"""
         if list_dictionaries is None:
             return '[]'
-        elif list_dictionaries == []:
+        if list_dictionaries == []:
             return '[]'
         else:
-            return str(list_dictionaries)
+            return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
