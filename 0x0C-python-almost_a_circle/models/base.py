@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """class called base, base for all my files to come in this """
+import json
 
 
 class Base:
@@ -23,3 +24,14 @@ class Base:
             return '[]'
         else:
             return str(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """class method that takes save to file """
+        filename = cls.__name__ + '.json'
+        with open(filename, 'w', encoding='utf-8') as f:
+            if list_objs is None:
+                f.write('[]')
+            json_string = cls.to_json_string(
+                [obj.to_dictionary() for obj in list_objs])
+            f.write(json_string)
