@@ -2,6 +2,7 @@
 
 '''definition for poping charachters'''
 
+
 def remove_char_at(str, n):
     new_string = ''
     for index, char in enumerate(str):
